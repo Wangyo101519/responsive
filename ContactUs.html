@@ -1,0 +1,161 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>FEEDBACKS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/contacts.css">
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		var options = {};
+    		if (document.location.search) {
+    			var array = document.location.search.split('=');
+    			var param = array[0].replace('?','');
+    			var value = array[1];
+    			if (param == 'animation'){
+    				options.animation = value;
+    			}
+    			else if (param == 'type_navigaton'){
+    				if (value == 'dots_preview'){
+    					$('.border_box').CSS({'marginBottom':'40px'});
+    					options['dots'] = true;
+    					options['preview'] = true;
+    				}
+    				else {
+    					options[value] = true;
+    					if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+    				}
+    			}
+    		}
+    		$('.box_skitter_large').skitter(options);
+    		//Highlight
+ 		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+    	});
+    </script>
+</head>
+<body>
+	<div class="counter">
+					<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=9492181&style=0010&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
+	<div class = "Container">
+		<div class = "headcon">
+			<div class = "logo">
+				<img src = "IMG/logo1.webp" alt ="" width = "300" height = "110" /> 
+			</div>
+			<div class ="headright"><br>
+				<small> For more information, please call us:</small></br>
+				<label> 0932 IKAW BAHALA SA PITO </label>
+			</div>
+		</div>
+		<div class = "navbg">
+			<div class = "nav_inside">
+				<center>
+				<ul> 
+					<li><a href ="index.html">HOME</a></li>
+					<li><a href ="design.html">DESIGN</a></li>
+					<li><a href ="Careers.html">CAREERS</a></li>
+					<li><a href ="AboutUs.html">ABOUT US</a></li>
+					<li><a href ="ContactUs.html">FEEDBACKS</a></li>
+				</ul>
+			</center>
+			</div>
+		</div>
+		<div class ="flashcon">
+		<div class ="box_skitter box_skitter_large" style= "z-index:0;">
+			<ul>
+				<li> <a href="#blindHeight"><img src = "./IMG/1.jpg"	class="random" /></a></li>
+				<li> <a href="#blindHeight"><img src = "./IMG/2.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./IMG/3.jpg"	class="random"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "midboxcon">
+		<div class = "midbox1">
+			<img src = "IMG/m4	.gif" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox2">
+			<img src = "IMG/m2.gif" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox3">
+			<img src = "IMG/m3.gif" alt ="" width = "334" height = "187" /> 
+		</div>
+</div>
+<center>
+<div class="rows">
+      <h1>FEEDBACKS</h1>
+  </div>
+  <div class="row">
+      <h4 style="text-align:center">We'd love to hear from you!</h4>
+  </div>
+  <div class="row input-container">
+      <div class="col-xs-12">
+        <div class="styled-input wide">
+          <input type="text" required />
+          <label>Name</label> 
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="styled-input">
+          <input type="text" required />
+          <label>Email</label> 
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="styled-input" style="float:right;">
+          <input type="text" required />
+          <label>Phone Number</label> 
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="styled-input wide">
+          <textarea required></textarea>
+          <label>Message</label>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="btn-lrg submit-button">Send Message</div>
+      </div>
+  </div>
+</center>
+<footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+     <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="Design.html">Design</a></li>
+      <li class="menu__item"><a class="menu__link" href="Careers.html">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUS.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="ContactUs.html">FeedBacks</a></li>>
+
+    </ul>
+    <p>&copy;2023 TATTOOS | MR. PARLIQUEZ</p>
+    <p>FOR SCHOOL PURPOSE PROJECT ONLY</p>
+  </footer>
+  <center><h2> COMMENT HERE! </center></h2>
+<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+<div class="commonninja_component pid-497d38ce-33d3-439e-b6a0-772d7e68e811"></div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+</html>

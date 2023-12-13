@@ -1,0 +1,159 @@
+<html>
+<head>
+	<title>ABOUT US</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/aboutus.css">
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		var options = {};
+    		if (document.location.search) {
+    			var array = document.location.search.split('=');
+    			var param = array[0].replace('?','');
+    			var value = array[1];
+    			if (param == 'animation'){
+    				options.animation = value;
+    			}
+    			else if (param == 'type_navigaton'){
+    				if (value == 'dots_preview'){
+    					$('.border_box').CSS({'marginBottom':'40px'});
+    					options['dots'] = true;
+    					options['preview'] = true;
+    				}
+    				else {
+    					options[value] = true;
+    					if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+    				}
+    			}
+    		}
+    		$('.box_skitter_large').skitter(options);
+    		//Highlight
+      		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+    	});
+    </script>
+</head>
+<body>
+	<div class="counter">
+					<!-- hitwebcounter Code START -->
+					<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=9492181&style=0010&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a> 
+	<div class = "Container">
+		<div class = "headcon">
+			<div class = "logo">
+				<img src = "IMG/logo1.webp" alt ="" width = "300" height = "110" />
+			</div>
+			<div class ="headright"><br>
+				<small> For more information, please call:</small></br>
+				<label> 0932 IKAW BAHALA SA PITO</label>
+
+			</div>
+		</div>
+		<div class = "navbg">
+			<div class = "nav_inside">
+				<center>
+				<ul> 
+					<li><a href ="index.html">HOME</a></li>
+					<li><a href ="design.html">DESIGN</a></li>
+					<li><a href ="Careers.html">CAREERS</a></li>
+					<li><a href ="AboutUs.html">ABOUT US</a></li>
+					<li><a href ="ContactUs.html">FEEDBACKS</a></li>
+				</ul>
+			</center>
+			</div>
+		</div>
+		<div class ="flashcon">
+		<div class ="box_skitter box_skitter_large" style= "z-index:0;">
+			<ul>
+				<li> <a href="#blindHeight"><img src = "./IMG/1.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./IMG/2.jpg"	class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src = "./IMG/3.jpg"	class="random"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "midboxcon">
+		<div class = "midbox1">
+			<img src = "IMG/m4.gif" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox2">
+			<img src = "IMG/m2.gif" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox3">
+			<img src = "IMG/m3.gif" alt ="" width = "334" height = "187" /> 
+		</div>
+		<div class="about-section">
+  <h1>COMMUNITY AND CONNECTION</h1>
+  <p>At [Tattoo Studio Name], we believe in building a community around art and self-expression. We welcome all walks of life, backgrounds, and stories into our studio, creating a welcoming and inclusive space for everyone.
+Thank you for considering us as your trusted tattoo studio. We look forward to the opportunity to create art that you'll carry with pride, knowing it was crafted by passionate professionals who care about your story.
+Come join us in this journey of self-expression, transformation, and artistry. Let's tell your story, one tattoo at a time.
+</p>
+  <h1>About Us</h1>
+  <p>At PARLIQUEZ SHOP, we are more than just artists; we are storytellers, visionaries, and creators of everlasting art. Our mission is to transform your ideas and emotions into unique, exceptional, and meaningful tattoos that will be with you for a lifetime.</p>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="IMG/column1.jpg" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>OUR PASSION</h2>
+        <p>We are deeply passionate about the art of tattooing. It's not just a job for us; it's a way of life. Each tattoo we create is a piece of our soul, a manifestation of our commitment to the craft, and a celebration of your individuality.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="IMG/column2.jpg" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>OUR EXPERTISE</h2>
+        <p>Our team of skilled and experienced artists has a diverse range of styles and specialties, ensuring that we can bring your tattoo dreams to life, no matter how complex or simple they may be. From black and grey realism to vibrant and colorful designs, we've got you covered.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="IMG/column3.jpg" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>CLEAN AND SAFE ENVIRONMENT</h2>
+        <p>Your safety and well-being are our top priorities. We maintain the highest standards of cleanliness and hygiene in our studio, and we only use sterilized, top-quality equipment and inks.</p>
+      </div>
+    </div>
+  </div>
+	 <footer class="footer">
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="Design.html">Design</a></li>
+      <li class="menu__item"><a class="menu__link" href="Careers.html">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUS.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="ContactUs.html">FeedBacks</a></li>
+
+
+    </ul>
+    <p>&copy;2023 TATTOOS | MR. PARLIQUEZ</p>
+    <p>FOR SCHOOL PURPOSE PROJECT ONLY</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</div>
+</footer>
+</body>
+</html>
